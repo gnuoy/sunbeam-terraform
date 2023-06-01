@@ -276,7 +276,7 @@ module "cinder-ceph" {
   charm            = "cinder-ceph-k8s"
   name             = "cinder-ceph"
   model            = juju_model.sunbeam.name
-  channel          = var.openstack-channel
+  channel          = "2023.1/edge/gnuoy"
   rabbitmq         = module.rabbitmq.name
   mysql            = module.mysql.name["cinder"]
   ingress-internal = ""
