@@ -57,7 +57,9 @@ variable "credential" {
 
 variable "config" {
   description = "Set configuration on model"
-  default     = {}
+  default     = {
+    agent-stream = "proposed"
+  }
 }
 
 variable "enable-ceph" {
